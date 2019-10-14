@@ -1,0 +1,27 @@
+plugins {
+	id 'java'
+	id 'application'
+	id 'eclipse'
+}
+
+application {
+    mainClassName = 'AWSS3Application'
+}
+
+version = '0.0.1-SNAPSHOT'
+sourceCompatibility = '1.8'
+
+configurations {
+	developmentOnly
+	runtimeClasspath {
+		extendsFrom developmentOnly
+	}
+}
+
+repositories {
+	mavenCentral()
+}
+
+dependencies {
+	 implementation platform('com.amazonaws:aws-java-sdk-bom:1.11.228')
+}
