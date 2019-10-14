@@ -29,8 +29,8 @@ public class AWSS3App {
     }
 
     public static AmazonS3 getAmazonS3Client() {
-        String accessKey = "AKIAQ5FNLQXVINJWD7FN";
-        String secretKey = "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";
+        String accessKey = "XXXXXXXXXXXXXXXXXXXXX";
+        String secretKey = "XXXXXXXXXXXXXXXXXXXXXXXX";
 
         BasicAWSCredentials awsCredentials = new BasicAWSCredentials(accessKey,
                 secretKey);
